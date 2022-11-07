@@ -1,0 +1,15 @@
+
+.header {
+    background-color: blue;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+}
+
+.textfields {
+    margin: 5px;
+}
+
+#username {
+    color: red
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/header'); %>
+<body>
+    <%- include('../partials/nav'); %>
+    <div class="container mt-5">
+        <h1>
+            Students List
+            <% if (admin) {%>
+                <button class="btn btn-primary">Add</button>
+            <% } %>
+
+
+        </h1>
+        <div class="row">
+            <div class="col-6">
+                <ul class="list">
+                <%for(let i=0; i < students.length; i++) {%>
+                    <li class="list-group-item">
+                    <%=students[i].first_name%> <%=students[i].last_name%>
+                    </li>
+                <% } %>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
